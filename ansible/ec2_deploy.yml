@@ -8,14 +8,14 @@
         instance_type: t2.micro
         image: ami-085925f297f89fce1
         region: us-east-1
-        key_name: newkey
+        key_name: newkey2
         vpc_subnet_id: subnet-56de5f30
         assign_public_ip: yes
         wait: yes
         count: 1
         group: eshop
-        aws_access_key: AKIA3FVNYPP4JWKFBFHE
-        aws_secret_key: 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
+        aws_access_key: "{{access_key}}"
+        aws_secret_key: "{{secret_key}}"
         security_token: "{{session_token}}"
       register: ec2
 
